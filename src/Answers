@@ -1,0 +1,78 @@
+1.  Define the function of a constructor. [2]
+The function of a constructor is to make a new object of a specific class.
+
+2. Outline the advantages of polymorphism, using the RollingStock class as an example. [3]
+Using polymorphism allows code from a superclass to be used in subclasses instead of having to be re-made every time a new
+subclass is made. For example, by making Engine and Wagon subclasses of RollingStock, we can call the variable ID and the
+constructor getWeight using the super() method instead of re-writing the code each time.
+
+3. Construct a unified modelling language (UML) diagram of the Train class. [3]
+
+
+4. Construct a method getNumberOfWagons(), part of the Train class, that returns the
+number of wagons currently coupled to the train. [2]
+
+
+5. Construct the removeWagon() method that will remove one wagon from a train and
+return the removed object. Include appropriate error checking. [5]
+
+
+6. Outline one advantage of using standard library collections. [2]
+
+
+7. Describe two ways in which programming by a team differs from programming by an
+individual working alone. [4]
+
+
+8.  State the appropriate data type to be used in the Address class to store
+(i) the street name; [1]
+(ii) the building number; [1]
+(iii) an indication of whether or not this is a business address. [1]
+
+
+9. Identify the changes to the Parcel class that will be needed to make use of the new
+Address class. [3]
+
+
+10. Outline how these two new classes can be created with minimal duplication of code. [3]
+
+
+11. Consider the following code fragment.
+
+Train A = new Train(123);
+Engine B = new Engine(7);
+A.addEngine(B);
+Wagon C = new Wagon(23);
+A.addWagon(C);
+Wagon D = new Wagon(66);
+A.addWagon(D);
+Wagon E = new Wagon(71);
+A.addWagon(E);
+A.addEngine(new Engine(9));
+
+(i) Draw the mEngines array after the code fragment has been executed. [2]
+(ii) State the value of mEngineCount after the code fragment has been executed. [1]
+(iii) Draw the mWagons array after both the code fragment above and the code fragment
+below have been executed. [2]
+
+Wagon F = A.removeWagon();
+F = A.removeWagon();
+A.addWagon(new Wagon(214));
+
+The parcels loaded into a wagon cannot weigh more than the capacity of the wagon. A train’s
+engines must have enough combined power to pull the loaded wagons. The company needs to
+be able to check that these requirements are being met.
+
+
+12. Construct the getWeight() method in the Wagon class that returns the total combined
+weight of the parcels currently in the wagon and the wagon itself. [4]
+
+
+13. Construct the getWeight() method in the Train class that returns the total combined
+weight of all the parcels, engines and wagons in a train. [4]
+
+
+14. Explain why having a getWeight() method in both the Train and Wagon classes
+does not cause a compiler error, even though the Train class does not inherit from the
+RollingStock class. [2]
+
