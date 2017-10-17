@@ -7,15 +7,15 @@ subclass is made. For example, by making Engine and Wagon subclasses of RollingS
 constructor getWeight using the super() method instead of re-writing the code each time.
 
 3. Construct a unified modelling language (UML) diagram of the Train class. [3]
-
+*ATTACHED*
 
 4. Construct a method getNumberOfWagons(), part of the Train class, that returns the
 number of wagons currently coupled to the train. [2]
-
+*CHECK THE CODE*
 
 5. Construct the removeWagon() method that will remove one wagon from a train and
 return the removed object. Include appropriate error checking. [5]
-
+*CHECK THE CODE*
 
 6. Outline one advantage of using standard library collections. [2]
 
@@ -24,14 +24,40 @@ return the removed object. Include appropriate error checking. [5]
 individual working alone. [4]
 
 
-8.  State the appropriate data type to be used in the Address class to store
-(i) the street name; [1]
-(ii) the building number; [1]
-(iii) an indication of whether or not this is a business address. [1]
+8. The following code implements the Parcel class used in the delivery company’s program.
+
+public class Parcel{
+    private int trackingID;
+    private double weight;
+    public String destinationAddress;
+    public String originAddress;
+    public Parcel(int ID){
+        trackingID = ID;
+        weight = 0;
+    }
+    public void setWeight(double newWeight){
+        weight=newWeight;
+    }
+    public double getWeight(){
+        return weight;
+    }
+}
+
+The origin and destination addresses are stored in a Parcel object as simple strings. However,
+addresses are complex and there are a lot of different pieces of information that may or may not
+be present such as a first name or a business name, in addition to house number, street name,
+city and country. It has been decided to create a new Address class to handle this information.
+
+State the appropriate data type to be used in the Address class to store
+    (i) the street name; [1]
+    (ii) the building number; [1]
+    (iii) an indication of whether or not this is a business address. [1]
+*CHECK THE CODE*
 
 
 9. Identify the changes to the Parcel class that will be needed to make use of the new
 Address class. [3]
+Change destinationAddress and originAddress from String to Adress.
 
 
 10. Outline how these two new classes can be created with minimal duplication of code. [3]
@@ -55,16 +81,15 @@ A.addEngine(new Engine(9));
 (iii) Draw the mWagons array after both the code fragment above and the code fragment
 below have been executed. [2]
 
-Wagon F = A.removeWagon();
-F = A.removeWagon();
-A.addWagon(new Wagon(214));
 
+12. Wagon F = A.removeWagon();
+    F = A.removeWagon();
+    A.addWagon(new Wagon(214));
 The parcels loaded into a wagon cannot weigh more than the capacity of the wagon. A train’s
 engines must have enough combined power to pull the loaded wagons. The company needs to
 be able to check that these requirements are being met.
 
-
-12. Construct the getWeight() method in the Wagon class that returns the total combined
+Construct the getWeight() method in the Wagon class that returns the total combined
 weight of the parcels currently in the wagon and the wagon itself. [4]
 
 

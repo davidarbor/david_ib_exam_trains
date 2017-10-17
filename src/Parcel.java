@@ -1,8 +1,8 @@
 public class Parcel{
     private int trackingID;
     private double weight;
-    public String destinationAddress;
-    public String originAddress;
+    public Address destinationAddress;
+    public Address originAddress;
 
     public Parcel(int ID){
         trackingID=ID;

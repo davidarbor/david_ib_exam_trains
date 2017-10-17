@@ -15,6 +15,5 @@ public class RollingStock{
         public int getID(){
             return mIDNumber;
         }
-
 // Other methods
 }

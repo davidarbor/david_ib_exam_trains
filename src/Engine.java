@@ -14,6 +14,5 @@ public class Engine extends RollingStock{
     public double getWeight(){
         return super.getWeight();
     }
-
 // Other methods
 }

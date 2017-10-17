@@ -23,12 +23,15 @@ public class Train{
         return mEngines[mEngineCount];
     }
     public void addWagon(Wagon newWagon){
-        mEngineCount++;
+        mWagonCount++;
         mWagons[mWagonCount]=newWagon;
     }
     public Wagon removeWagon(){
         mWagonCount--;
         return mWagons[mWagonCount];
+    }
+    public void getNumberOfWagons(){
+        System.out.println(mWagonCount);
     }
     public double getWeight(){
         double weightOfEngines=mEngineCount*120000;

@@ -6,5 +6,6 @@ public class Runner{
         t.addWagon(w);
         t.addEngine(e);
         System.out.println(t.getWeight());
+        t.getNumberOfWagons();
     }
 }
