@@ -35,7 +35,12 @@ public class Train{
     }
     public double getWeight(){
         double weightOfEngines=mEngineCount*120000;
-        double weightOfWagons=mWagonCount*32000;
+        double weightOfWagons=0;
+        for(int i=0; i<mWagons.length; i++){
+            if(mWagons[i]!=null){
+                weightOfWagons+=mWagons[i].getWeight();
+            }
+        }
         mWeight=weightOfEngines+weightOfWagons;
         return mWeight;
     }

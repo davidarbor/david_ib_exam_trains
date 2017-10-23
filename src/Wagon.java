@@ -12,8 +12,18 @@ public class Wagon extends RollingStock{
     public int getWagonID(){
         return this.getID();
     }
+    public void addParcel(Parcel newParcel){
+        mParcelCount++;
+        mParcels[mParcelCount]=newParcel;
+    }
     public double getWeight(){
-        return super.getWeight();
+        int weightOfParcels=0;
+        for(int i=0; i<mParcels.length; i++){
+            if(mParcels[i]!=null){
+                weightOfParcels+=mParcels[i].getWeight();
+            }
+        }
+        return super.getWeight()+weightOfParcels;
     }
 // Other methods
 }
