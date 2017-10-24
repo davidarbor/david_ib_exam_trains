@@ -18,13 +18,13 @@ return the removed object. Include appropriate error checking. [5]
 *CHECK THE CODE*
 
 6. Outline one advantage of using standard library collections. [2]
+Using standard library collections make it so that you don't have to code for something like an ArrayList every time you
+want to use one.
 
-
-7. Describe two ways in which programming by a team differs from programming by an
-individual working alone. [4]
-In a team, instance variables should be made private -- only accessible through getters and setters -- in case the names
-of the variables need to be changed, whereas someone working alone can leave the instance variables public. In addition,
-
+7. Describe two ways in which programming by a team differs from programming by an individual working alone. [4]
+In a team, there is a much higher chance that errors will be caught because there are more people looking over the code.
+In terms of differences in the actual code, instance variables for different classes are often made private - only
+accessible via getters and setters - so that the variables' names can be changed more easily.
 
 8. The following code implements the Parcel class used in the delivery company’s program.
 
@@ -52,8 +52,12 @@ city and country. It has been decided to create a new Address class to handle th
 
 State the appropriate data type to be used in the Address class to store
     (i) the street name; [1]
+    String
     (ii) the building number; [1]
+    int
     (iii) an indication of whether or not this is a business address. [1]
+    String
+
 *CHECK THE CODE*
 
 9. Identify the changes to the Parcel class that will be needed to make use of the new
@@ -61,7 +65,7 @@ Address class. [3]
 Change destinationAddress and originAddress from String to Address.
 
 10. Outline how these two new classes can be created with minimal duplication of code. [3]
-
+They don't have any duplicated code (not in my version, anyway).
 
 11. Consider the following code fragment.
 
