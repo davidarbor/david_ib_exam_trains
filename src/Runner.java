@@ -16,9 +16,9 @@ public class Runner{
         System.out.println(t.getWeight());
         System.out.println(p.getDestAddress().getStreetName());
         System.out.println(p.getDestAddress().getBuildingNumber());
-        System.out.println(p.getDestAddress().getIsBusinessAddress());
+        System.out.println(p.getDestAddress().getIsBusinessAdd());
         System.out.println(p.getOriginAddress().getStreetName());
         System.out.println(p.getOriginAddress().getBuildingNumber());
-        System.out.println(p.getOriginAddress().getIsBusinessAddress());
+        System.out.println(p.getOriginAddress().getIsBusinessAdd());
     }
 }

@@ -21,10 +21,10 @@ public class Address{
     public int getBuildingNumber(){
         return mBuildingNumber;
     }
-    public void setIsBusinessAddress(String newIsBusinessAddress){
+    public void setIsBusinessAdd(String newIsBusinessAddress){
         mIsBusinessAddress=newIsBusinessAddress;
     }
-    public String getIsBusinessAddress(){
+    public String getIsBusinessAdd(){
         return mIsBusinessAddress;
     }
 }
